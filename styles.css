@@ -1,0 +1,115 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.header {
+    background-color: #e0e0e0;
+    text-align: center;
+    padding: 20px 0;
+}
+
+nav {
+    background-color: #2b6357;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px; /* Aumenta el tamaño de la fuente de la navegación */
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.info {
+    width: 65%;
+}
+
+.card {
+    background-color: #ffef94;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.card h2 {
+    margin-top: 0;
+}
+
+.card p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.card a {
+    color: #2b6357;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.appointment {
+    background-color: #4b636e;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+}
+
+.appointment h2 {
+    margin-top: 0;
+}
+
+.appointment form {
+    display: flex;
+    flex-direction: column;
+}
+
+.appointment label {
+    margin-bottom: 5px;
+}
+
+.appointment input {
+    margin-bottom: 15px;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+}
+
+.appointment button {
+    padding: 10px;
+    background-color: #ffef94;
+    color: #2b6357;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #2b6357;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer p {
+    margin: 5px 0;
+}
