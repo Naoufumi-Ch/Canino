@@ -3,63 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Centro Veterinario Caninos y Felinos</title>
+    <title>Flor Amarilla Animada</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="header">
-        <h1>Centro Veterinario Caninos y Felinos</h1>
+    <div class="flower">
+        <!-- Centro de la flor -->
+        <div class="center"></div>
+        <!-- Pétalos de la flor -->
+        <div class="petal petal1"></div>
+        <div class="petal petal2"></div>
+        <div class="petal petal3"></div>
+        <div class="petal petal4"></div>
+        <div class="petal petal5"></div>
+        <div class="petal petal6"></div>
     </div>
-    <nav>
-        <ul>
-            <li><a href="#">Servicios</a></li>
-            <li><a href="#">Productos</a></li>
-            <li><a href="#">Guardería</a></li>
-            <li><a href="#">Promociones</a></li>
-        </ul>
-    </nav>
-    <main>
-        <section class="info">
-            <div class="card">
-                <h2>Cuidados y educación para su perro</h2>
-                <p>Equam, ium fugian debis sit, qui occaecat ipienihit as moluptatur rem et liquis et ulparci psanis mo voluptate volupta pa et, offcutr? Dusdae volore, que peribus sapist, sande volenis sunt.</p>
-                <a href="#">Ver más...</a>
-            </div>
-            <div class="card">
-                <h2>Salir de viaje con su mascota</h2>
-                <p>Equam, ium fugian debis sit, qui occaecat ipienihit as moluptatur rem et liquis et ulparci psanis mo voluptate volupta pa et, offcutr? Dusdae volore, que peribus sapist, sande volenis sunt.</p>
-                <a href="#">Ver más...</a>
-            </div>
-        </section>
-        <aside class="appointment">
-            <h2>Solicitar cita médica</h2>
-            <form>
-                <label for="mascota">Mascota:</label>
-                <input type="text" id="mascota" name="mascota">
-                
-                <label for="edad">Edad:</label>
-                <input type="text" id="edad" name="edad">
-                
-                <label for="raza">Raza:</label>
-                <input type="text" id="raza" name="raza">
-                
-                <label for="fecha">Fecha:</label>
-                <input type="date" id="fecha" name="fecha">
-                
-                <label for="hora">Hora:</label>
-                <input type="time" id="hora" name="hora">
-                
-                <label for="amo">Amo:</label>
-                <input type="text" id="amo" name="amo">
-                
-                <button type="submit">Validar Cita</button>
-            </form>
-        </aside>
-    </main>
-    <footer>
-        <p>Contáctenos</p>
-        <p>Línea gratuita 018000-00001</p>
-        <p>Correo: preguntas@caninosyfelinos.com</p>
-    </footer>
+
+    <script src="script.js">
+        // Animación adicional con JavaScript (interacción al hacer clic)
+document.querySelector('.flower').addEventListener('click', () => {
+    document.querySelector('.flower').classList.toggle('fast-rotate');
+});
+
+// Agregar clase para rotar más rápido al hacer clic
+document.addEventListener('DOMContentLoaded', () => {
+    const flower = document.querySelector('.flower');
+    flower.addEventListener('click', function () {
+        flower.classList.toggle('fast-rotate');
+    });
+});
+        
+    </script>
 </body>
 </html>
