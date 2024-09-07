@@ -1,17 +1,23 @@
 body {
+    margin: 0;
+    background-color: lightblue;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: 0;
-    background-color: lightblue;
+}
+
+.garden {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
 }
 
 .flower {
     position: relative;
     width: 100px;
     height: 100px;
-    animation: rotate 10s infinite linear;
 }
 
 /* Centro de la flor */
@@ -35,7 +41,6 @@ body {
     top: 0;
     left: 0;
     transform-origin: 50% 100px;
-    transition: transform 0.3s ease-in-out;
     border: 2px solid orange;
 }
 
@@ -45,22 +50,3 @@ body {
 .petal4 { transform: rotate(180deg); }
 .petal5 { transform: rotate(240deg); }
 .petal6 { transform: rotate(300deg); }
-
-/* Animación de rotación de la flor */
-@keyframes rotate {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-/* Efecto al pasar el mouse sobre la flor */
-.flower:hover .petal {
-    transform: scale(1.2);
-}
-/* Agregar una clase para rotación rápida */
-.fast-rotate {
-    animation: rotate 2s infinite linear;
-}
